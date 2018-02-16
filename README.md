@@ -6,7 +6,7 @@ It is written to only process \*.sharepoint.com requests, and those end with \/_
 
 Throttling driven by a concurrent queue. 10 requests must occur within 5 seconds for the throttling to kick in.
 
-*You can change any of the above hardcoded values. *
+**You can change any of the above hardcoded values. **
 
 It is hardcoded for Fiddler version 4.6.3.44034, but you can change that to your version (see: https://github.com/OneBitSoftware/Http429.SimulateThrottling/blob/master/Http429.SimulateThrottling/ThrottleSimulatorExtension.cs#L2)
 
