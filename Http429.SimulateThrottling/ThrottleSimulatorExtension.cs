@@ -1,4 +1,4 @@
-﻿// Change your Fiddler version as required
+﻿// Change your Fiddler RequiredVersion as required
 [assembly: Fiddler.RequiredVersion("4.6.3.44034")]
 
 namespace Http429.SimulateThrottling
@@ -10,7 +10,7 @@ namespace Http429.SimulateThrottling
 
     /// <summary>
     /// This Fiddler extension tampers HTTP response messages to HTTP 429 Too Many Requests errors.
-    /// It is written to only process *.sharepoint.com requests, and those end with /_vti_bin/client.svc
+    /// It is written to only process *.sharepoint.com requests, and those start with /_vti_bin/client.svc
     /// Throttling driven by a concurrent queue. 10 requests must occur within 5 seconds for the throttling to kick in.
     /// </summary>
     public class ThrottleSimulatorExtension : IAutoTamper2, IFiddlerExtension

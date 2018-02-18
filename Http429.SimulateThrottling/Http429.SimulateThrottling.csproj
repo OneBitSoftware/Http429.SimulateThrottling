@@ -46,9 +46,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "C:\Projects\onebitsoftware\SharePointOnline.SimulateThrottling\SharePointOnline.SimulateThrottling\bin\Debug\SharePointOnline.SimulateThrottling.dll" "C:\Program Files (x86)\Fiddler2\Scripts\SharePointOnline.SimulateThrottling.dll" /Y
-
-
- copy "$(TargetPath)" "%25userprofile%25\My Documents\Fiddler2\Scripts\$(TargetFilename)" /Y</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "%25userprofile%25\My Documents\Fiddler2\Scripts\$(TargetFilename)" /Y</PostBuildEvent>
   </PropertyGroup>
 </Project>
